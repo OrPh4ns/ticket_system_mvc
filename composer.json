@@ -1,0 +1,17 @@
+{
+	"require:":{
+
+	},
+	"autoload":{
+		"psr-4":{
+			"app\\":"app/",
+			"routes\\":"routes/",
+			"config\\":"config/"
+		}
+	},
+	"require": {
+		"ext-pdo": "*",
+		"ext-json": "*",
+		"twig/twig": "*"
+	}
+}
