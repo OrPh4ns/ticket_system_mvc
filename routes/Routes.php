@@ -11,8 +11,15 @@ class Routes {
         $router = new Router();
     
         //HOME
-        $router->get('/', [HomeController::class, 'index']);
-        $router->get('/home', [HomeController::class, 'index']);
+//        $router->get('/', [HomeController::class, 'index']);
+//
+//        $router->get('/{id}', [HomeController::class, 'home']);
+
+        $router->get('/login', [HomeController::class, 'login']);
+        $router->post('/login_post', [HomeController::class, 'login_post']);
+
+        //$router->get('/', [HomeController::class, 'index']);
+        //$router->get('/home', [HomeController::class, 'index']);
     
         $router->route();
     

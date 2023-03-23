@@ -1,6 +1,13 @@
-{% extends 'base.html.twig' %}
+<?php
+echo "gggggggggg";
+var_dump($l);
 
-{% block title %}Homepage{% endblock %}
+echo "fffff";
+?>
+
+{% extends 'base.twig' %}
+
+{% block title %}Startseite{% endblock %}
 
 {% block content %}
     <h1>Welcome to my website!</h1>

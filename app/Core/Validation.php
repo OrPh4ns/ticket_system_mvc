@@ -5,6 +5,4 @@ namespace app\Core;
 class Validation
 {
 
-
-
 }

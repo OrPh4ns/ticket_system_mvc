@@ -7,21 +7,26 @@ use Exception;
 class Router {
     private $routes = array();
 
-    public function get($route, $callback, $protected = false) {
+    public function get($route, $callback, $protected = false): void
+    {
         $this->addRoute('GET', $route, $callback, $protected);
     }
 
-    public function post($route, $callback, $protected = false) {
+    public function post($route, $callback, $protected = false): void
+    {
         $this->addRoute('POST', $route, $callback, $protected);
     }
 
-    public function put($route, $callback, $protected = false) {
+    public function put($route, $callback, $protected = false): void
+    {
         $this->addRoute('PUT', $route, $callback, $protected);
     }
 
-    public function delete($route, $callback, $protected = false) {
+    public function delete($route, $callback, $protected = false): void
+    {
         $this->addRoute('DELETE', $route, $callback, $protected);
     }
+
 
     private function addRoute($method, $route, $callback, $protected) {
         $route = preg_replace('/\{(\w+)\}/', '(\w+)', $route);

@@ -11,7 +11,6 @@
 	},
 	"require": {
 		"ext-pdo": "*",
-		"ext-json": "*",
-		"twig/twig": "*"
+		"ext-json": "*"
 	}
 }
