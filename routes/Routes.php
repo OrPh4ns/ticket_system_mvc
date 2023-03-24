@@ -11,7 +11,12 @@ class Routes {
         $router = new Router();
     
         //HOME
-//        $router->get('/', [HomeController::class, 'index']);
+        $router->get('/', [HomeController::class, 'index']);
+
+        $router->group('/admin',function($router) {
+            $router->get('/users', [HomeController::class, 'index']);
+           // $router->post('/users', 'UserController@store');
+        });
 //
 //        $router->get('/{id}', [HomeController::class, 'home']);
 
