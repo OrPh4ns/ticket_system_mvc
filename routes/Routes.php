@@ -9,7 +9,8 @@ class Routes {
     public function web(){
 
         $router = new Router();
-    
+
+
         //HOME
         $router->get('/', [HomeController::class, 'index']);
 

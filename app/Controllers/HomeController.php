@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        echo "home page";
+        include "../resources/views/home.php";
     }
   public function home($id)
   {
